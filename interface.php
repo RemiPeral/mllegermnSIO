@@ -17,7 +17,7 @@
 		<script src="js/init.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style_2.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
@@ -62,7 +62,7 @@
 				
 					<div class="row">
 							<div class="12u">
-								<form method="post" action="#">
+								<form method="post" action="insertionVideo.php">
 									<div>
 										<div class="row">
 											<div class="6u">
@@ -105,7 +105,7 @@
 					</header>
 						<div class="row">
 							<div class="12u">
-								<form method="post" action="#">
+								<form method="post" action="insertion.php">
 									<div>
 										<div class="row">
 											<div class="6u">

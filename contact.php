@@ -1,52 +1,211 @@
 <!DOCTYPE HTML>
 <?php require("connexionBDD.php"); ?>
-<html><head><title>Mlle Germn | Spectacle musical autour de Jacques Brel - Contact</title><meta name="description" content="website description"><meta name="keywords" content="website keywords, website keywords"><meta http-equiv="content-type" content="text/html; charset=windows-1252"><link rel="stylesheet" type="text/css" href="style/style.css" title="style"></head><body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.php">Mlle GermN<span class="logo_colour"></span></a></h1>
-        </div>
-      </div>
-      <div id="menubar">
-       <ul id="menu"><!-- put class="selected" in the li tag for the selected page - to highlight which page you're on --><li class="base"><a href="index.php">Accueil</a></li>
-          <li class="base"><a href="examples.html">Musique</a></li>
-          <li class="base"><a href="video.php">Vidéos</a></li>
-          <li class="base"><a href="bio.php">Bio</a></li>
-          <li class="selected"><a href="contact.php">Contact</a></li>
-		  <li class="base"><a href="another_page.html">Administration</a></li>
-        </ul></div>
-        </ul></div>
-    </div>
-    <div id="content_header"></div>
-    <div id="site_content">
-      <div class="sidebar">
-        <?php include("sidebar.php"); ?>
-        
-      </div>
-      <div id="content">
-        <!-- insert the page content here -->
-        <h1>Contact</h1>
-        <p>Vous pouvez contacter la troupe ici:</p>
-		
-		<h4>Telephone : <h5>06 88 48 74 25</h5> </h4> 
-		</br>
-		<h4>Mail : </h4>
-		</br>
-        <form action="#" method="post">
-          <div class="form_settings">
-            <p><span>Nom</span><input class="contact" type="text" name="your_name" value=""></p>
-            <p><span>Adresse e-mail</span><input class="contact" type="text" name="your_email" value=""></p>
-            <p><span>Message</span><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p>
-            <p style="padding-top: 15px"><span> </span><input class="submit" type="submit" name="contact_submitted" value="Envoyer"></p>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div id="content_footer"></div>
-    <div id="footer">
-      Copyright © black &amp; white | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Obscura</title>
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<link rel="stylesheet" type="text/css" href="style/css/media-queries.css" />
+<link rel="stylesheet" type="text/css" href="style/js/player/mediaelementplayer.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic|Open+Sans+Condensed:300,700' rel="stylesheet" type='text/css'>
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/retina.js"></script>
+<script type="text/javascript" src="style/js/selectnav.js"></script>
+<script type="text/javascript" src="style/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="style/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="style/js/mediaelement.min.js"></script>
+<script type="text/javascript" src="style/js/mediaelementplayer.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.dcflickr.1.0.js"></script>
+<script type="text/javascript" src="style/js/twitter.min.js"></script>
+<script type="text/javascript">
+	$.backstretch("style/images/bg/1.jpg");
+</script>
+</head>
+<body>
+<div class="scanlines"></div>
+
+<!-- Begin Header -->
+<div class="header-wrapper opacity">
+	<div class="header">
+		<!-- Begin Logo -->
+		<div class="logo">
+		    <a href="index.php">
+				Mlle Germn 
+			</a>
+	    </div>
+		<!-- End Logo -->
+		<!-- Begin Menu -->
+		<div id="menu-wrapper">
+			<div id="menu" class="menu">
+				<ul id="tiny">
+					<li><a href="index.php">Accueil</a>
+					<li><a href="musique.php">Musique</a>
+						<ul>
+							<li><a href="musique.php">Quelques extraits</a></li>
+							<li><a href="concerts.php">Prochains concerts</a></li>
+						</ul>
+					</li>
+					<li><a href="bio.php">Bio</a></li>
+					<li><a href="videos.php">VidÃ©os</a></li>
+					<li><a href="galerie.html">Galerie</a></li>
+					<li class="active"><a href="contact.php">Contact</a></li>
+					<li><a href="administration.php">Administration</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- End Menu -->
+	</div>
 </div>
-  </div>
-</body></html>
+<!-- End Header -->
+
+<!-- Begin Wrapper -->
+<div class="wrapper"><!-- Begin Intro -->
+<div class="intro">Pour nous contacter </div>
+<ul class="social">
+<li><a class="rss" href="#"></a></li><li><a class="facebook" href="#"></a></li><li><a class="rss" href="#"></a></li><li><a class="facebook" href="#"></a></li><li><a class="rss" href="#"></a></li><li><a class="facebook" href="#"></a></li>
+</ul>
+<!-- Begin Container -->
+<div class="content box">
+	<h1 class="title">Mlle Germn | Contact</h1>
+		<div class="map"><iframe width="630" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?ll=37.978515,23.754019&amp;spn=0.002537,0.006748&amp;vpsrc=6&amp;t=m&amp;z=14&amp;output=embed"></iframe></div>
+<h3>Remplissez le formulaire pour nous contacter </h3>
+
+<div class="form-container">
+	<form class="forms" action="#" method="post">
+		<fieldset>
+			<ol>
+				<li class="form-row text-input-row"><label>Nom</label><input type="text" name="name" value="" class="text-input required" title="" /></li> 
+				<li class="form-row text-input-row"><label>E-mail</label><input type="text" name="email" value="" class="text-input required email" title="" /></li> 
+				<li class="form-row text-input-row"><label>Sujet</label><input type="text" name="subject" value="" class="text-input required" title="" /></li> 
+				<li class="form-row text-area-row"><label>Message</label><textarea name="message" class="text-area required"></textarea></li> 
+				<li class="button-row"><input type="submit" value="Submit" name="submit" class="btn-submit" /></li>
+			</ol>
+		</fieldset>
+	</form>
+</div>
+
+
+
+</div>
+<!-- End Container -->
+
+<!-- Begin Sidebar -->
+<div class="sidebar box">
+  <div class="sidebox widget">
+			<h3 class="widget-title">OÃ¹ sommes-nous ?</h3>
+			<p>Montauban, Tarn-Et-Garonne, France</p>
+			<p>
+				<span class="lite1">Tel:</span> 06 88 48 74 25<br />
+				<span class="lite1">E-mail:</span> bonjourmllegermn@gmail.com
+			
+	</div>
+	
+	<h3 class="widget-title">Prochains Concerts</h3>
+	<?php 
+		
+		$req = "SELECT * FROM concert";
+		$resultat = $connexion->query($req) or die ('Erreur dans la requÃªte '.$sql);
+		$nbLig=$resultat->rowcount();
+		for ($i =0; $i < $nbLig; $i++)
+		{ ?>
+			<div class="sidebox widget">
+				
+					<?php 
+						$ligne = $resultat->fetch();
+						$date = $ligne['date'];
+						$descriptionC = $ligne['description'];
+						$lieu = $ligne['lieu'];		
+
+						echo "<h4>$lieu</h4>";
+						echo "<h5>$date</h5>";
+						echo "<p>$descriptionC<br></p>
+						<p></p>";
+						
+						echo"</div>";
+		}
+			
+		
+		?>
+	
+</div>
+<!--End Sidebar -->
+<div class="clear"></div>
+
+</div>
+<!-- End Wrapper -->
+
+
+<!-- Begin Footer -->
+<div class="footer-wrapper">
+<div id="footer" class="four">
+		<div id="first" class="widget-area">
+			<div class="widget widget_search">
+				
+			</div>
+			<div class="widget widget_archive">
+				<h3 class="widget-title">Menu</h3>
+				<ul>
+					<li><a href="index.php">Index</a></li>
+					<li><a href="musique.php">Musique</a></li>
+					<li><a href="bio.php">Bios</a></li>
+					<li><a href="videos.php">VidÃ©os</a></li>
+					<li><a href="galerie.html">Galerie</a></li>
+					<li><a href="contact.php">Contact</a></li>
+				</ul>
+			</div>	
+		</div>
+	
+		<div id="third" class="widget-area">
+		<div id="example-widget-3" class="widget example">
+			<h3 class="widget-title">Galerie</h3>
+			<ul class="post-list">
+			  	<li> 
+			  		<div class="frame">
+			  			<a href="#"><img src="style/images/germn/jeane1Min.jpg" /></a>
+			  		</div>
+					<div class="meta">
+					    <h6><a href="bio.php#jeane">Jeane</a></h6>
+					    <em>21 Avril 2015</em>
+				    </div>
+				</li>
+				<li> 
+			  		<div class="frame">
+			  			<a href="#"><img src="style/images/germn/patrick1Min.jpg" /></a>
+			  		</div>
+					<div class="meta">
+					    <h6><a href="bio.php#patrick">Patrick</a></h6>
+					    <em>21 Avril 2015</em>
+				    </div>
+				</li>
+				<li> 
+			  		<div class="frame">
+			  			<a href="#"><img src="style/images/germn/laurent1Min.jpg" /></a>
+			  		</div>
+					<div class="meta">
+					    <h6><a href="bio.php#laurent">Laurent</a></h6>
+					    <em>21 Avril 2015</em>
+				    </div>
+				</li>
+			</ul>
+			
+		</div>
+		</div>
+	</div>
+</div>
+<div class="site-generator-wrapper">
+	<div class="site-generator">Copyright PERAL RÃ©mi 2015. All rights reserved.</div>
+</div>
+<!-- End Footer --> 
+<script type="text/javascript" src="style/js/scripts.js"></script>
+</body>
+</html>

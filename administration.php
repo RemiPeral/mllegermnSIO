@@ -6,7 +6,7 @@
         <meta name="description" content="Expand, contract, animate forms with jQuery wihtout leaving the page" />
         <meta name="keywords" content="expand, form, css3, jquery, animate, width, height, adapt, unobtrusive javascript"/>
 		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
-        <link rel="stylesheet" type="text/css" href="css/style_1.css" />
+        <link rel="stylesheet" type="text/css" href="style/css/style_1.css" />
 		<script src="js/cufon-yui.js" type="text/javascript"></script>
 		<script src="js/ChunkFive_400.font.js" type="text/javascript"></script>
 		<script type="text/javascript">
