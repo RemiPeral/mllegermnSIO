@@ -111,6 +111,7 @@ $.backstretch("style/images/bg/1.jpg");
 				
 				$exp = explode(':_:', $media_url);
 				$html = "";
+				
 				switch ($exp[0]) {
 					case 'youtube':
 						$html = '<iframe width="490" height="281" src="//www.youtube.com/embed/'.$exp[1].'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>';

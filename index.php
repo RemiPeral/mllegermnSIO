@@ -121,12 +121,39 @@ $.backstretch("style/images/bg/1.jpg");
 			
 				$ligne = $result->fetch();
 				$titre = $ligne['titre'];
-				$lien = $ligne['lien'];
+				$link = $ligne['lien'];
 				$description = $ligne['description'];
+				
+				$media_url = "";
+				
+				//YOUTUBE
+				if(preg_match('#(?<=(?:v|i)=)[a-zA-Z0-9-]+(?=&)|(?<=(?:v|i)\/)[^&\n]+|(?<=embed\/)[^"&\n]+|(?<=(?:v|i)=)[^&\n]+|(?<=youtu.be\/)[^&\n]+#', $link, $videoid)){
+					if(strlen($videoid[0])) { $media_url = 'youtube:_:'.$videoid[0]; }
+				}
+
+				//VIMEO
+				if(preg_match('#(https?://)?(www.)?(player.)?vimeo.com/([a-z]*/)*([0-9]{6,11})[?]?.*#', $link, $videoid)){
+					if(strlen($videoid[5])) { $media_url = 'vimeo:_:'.$videoid[5]; }
+				}
+				
+				$exp = explode(':_:', $media_url);
+				$html = "";
+				
+				switch ($exp[0]) {
+					case 'youtube':
+						$html = '<iframe width="490" height="281" src="//www.youtube.com/embed/'.$exp[1].'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>';
+						break;
+					case 'vimeo':
+						$html = '<iframe width="490" height="281" src="http://player.vimeo.com/video/'.$exp[1].'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+						break;
+					case 'dailymotion':
+						$html = '<iframe width="490" height="281" src="http://www.dailymotion.com/embed/video/'.$exp[1].'" frameborder="0" allowfullscreen></iframe>';
+						break;
+				}
 		?>
 		
 		<div class="post format-video box"> 
-			<div class="video frame"><iframe src="<?php echo "$lien"; ?>" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+			<div class="video frame"><?php echo "$html"; ?></div>
 			<h2 class="title"><a href="post.html"><?php echo "$titre"; ?></a></h2>
 			<p><?php echo "$description"; ?></p>
 		

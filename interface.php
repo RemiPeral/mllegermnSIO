@@ -46,7 +46,7 @@
 							<header>
 								<h1>Administration <strong>Mlle GermN</strong>.</h1>
 							</header>
-							<p>Cette interface permet l'ajout de nouvelles vidéos et de dates de concert </p>
+							<p>Cette interface permet l'ajout de nouvelles vidéos, de dates de concert et de réception de messages</p>
 						</div>
 					</div>
 				</article>
