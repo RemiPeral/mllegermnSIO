@@ -93,6 +93,7 @@ $.backstretch("style/images/bg/1.jpg");
 				$ligne = $result->fetch();
 				
 				$titre = $ligne['titre'];
+				$dateAjout = $ligne['dateAjout'];
 				$link = $ligne['lien'];
 				$description = $ligne['description'];
 				
@@ -134,7 +135,7 @@ $.backstretch("style/images/bg/1.jpg");
 			<p><?php echo "$description"; ?></p>
 		
 			<div class="details">
-				<span class="icon-video"><a href="#">26 Avril 2015</a></span>
+				<span class="icon-video"><a href="#"><?php echo "$dateAjout";?></a></span>
 			</div>
 			
 		</div>
